@@ -14,8 +14,9 @@
 		2CBB87822A2C56BC00334413 /* UnitTesting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CBB87802A2C56BC00334413 /* UnitTesting.xcdatamodeld */; };
 		2CBB87842A2C56BE00334413 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBB87832A2C56BE00334413 /* Assets.xcassets */; };
 		2CBB87872A2C56BE00334413 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBB87852A2C56BE00334413 /* LaunchScreen.storyboard */; };
-		2CBB87922A2C56BE00334413 /* UnitTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBB87912A2C56BE00334413 /* UnitTestingTests.swift */; };
 		2CBB879D2A2C56BE00334413 /* UnitTestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBB879C2A2C56BE00334413 /* UnitTestingUITests.swift */; };
+		2CBB87B12A2C6DA900334413 /* SignupFormModalValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBB87B02A2C6DA900334413 /* SignupFormModalValidatorTests.swift */; };
+		2CBB87B72A2C6ED500334413 /* SignUpFormModalValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBB87B62A2C6ED500334413 /* SignUpFormModalValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +47,12 @@
 		2CBB87862A2C56BE00334413 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CBB87882A2C56BE00334413 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CBB878D2A2C56BE00334413 /* UnitTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CBB87912A2C56BE00334413 /* UnitTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingTests.swift; sourceTree = "<group>"; };
 		2CBB87932A2C56BE00334413 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CBB87982A2C56BE00334413 /* UnitTestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBB879C2A2C56BE00334413 /* UnitTestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingUITests.swift; sourceTree = "<group>"; };
 		2CBB879E2A2C56BE00334413 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CBB87B02A2C6DA900334413 /* SignupFormModalValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModalValidatorTests.swift; sourceTree = "<group>"; };
+		2CBB87B62A2C6ED500334413 /* SignUpFormModalValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModalValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		2CBB87762A2C56BC00334413 /* UnitTesting */ = {
 			isa = PBXGroup;
 			children = (
+				2CBB87B52A2C6EB700334413 /* Validator */,
 				2CBB87772A2C56BC00334413 /* AppDelegate.swift */,
 				2CBB87792A2C56BC00334413 /* SceneDelegate.swift */,
 				2CBB877B2A2C56BC00334413 /* ViewController.swift */,
@@ -116,8 +119,8 @@
 		2CBB87902A2C56BE00334413 /* UnitTestingTests */ = {
 			isa = PBXGroup;
 			children = (
-				2CBB87912A2C56BE00334413 /* UnitTestingTests.swift */,
 				2CBB87932A2C56BE00334413 /* Info.plist */,
+				2CBB87B02A2C6DA900334413 /* SignupFormModalValidatorTests.swift */,
 			);
 			path = UnitTestingTests;
 			sourceTree = "<group>";
@@ -129,6 +132,14 @@
 				2CBB879E2A2C56BE00334413 /* Info.plist */,
 			);
 			path = UnitTestingUITests;
+			sourceTree = "<group>";
+		};
+		2CBB87B52A2C6EB700334413 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				2CBB87B62A2C6ED500334413 /* SignUpFormModalValidator.swift */,
+			);
+			path = Validator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 					};
 					2CBB878C2A2C56BE00334413 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 						TestTargetID = 2CBB87732A2C56BC00334413;
 					};
 					2CBB87972A2C56BE00334413 = {
@@ -262,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CBB877C2A2C56BC00334413 /* ViewController.swift in Sources */,
+				2CBB87B72A2C6ED500334413 /* SignUpFormModalValidator.swift in Sources */,
 				2CBB87782A2C56BC00334413 /* AppDelegate.swift in Sources */,
 				2CBB87822A2C56BC00334413 /* UnitTesting.xcdatamodeld in Sources */,
 				2CBB877A2A2C56BC00334413 /* SceneDelegate.swift in Sources */,
@@ -272,7 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CBB87922A2C56BE00334413 /* UnitTestingTests.swift in Sources */,
+				2CBB87B12A2C6DA900334413 /* SignupFormModalValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +491,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 928S455T9D;
 				INFOPLIST_FILE = UnitTestingTests/Info.plist;
@@ -489,6 +503,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyperl.UnitTestingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnitTesting.app/UnitTesting";
@@ -500,6 +515,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 928S455T9D;
 				INFOPLIST_FILE = UnitTestingTests/Info.plist;
