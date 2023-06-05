@@ -17,6 +17,7 @@
 		2CBB879D2A2C56BE00334413 /* UnitTestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBB879C2A2C56BE00334413 /* UnitTestingUITests.swift */; };
 		2CBB87B12A2C6DA900334413 /* SignupFormModalValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBB87B02A2C6DA900334413 /* SignupFormModalValidatorTests.swift */; };
 		2CBB87B72A2C6ED500334413 /* SignUpFormModalValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBB87B62A2C6ED500334413 /* SignUpFormModalValidator.swift */; };
+		2CBB87C02A2CB5CD00334413 /* SignupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBB87BF2A2CB5CD00334413 /* SignupConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2CBB879E2A2C56BE00334413 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CBB87B02A2C6DA900334413 /* SignupFormModalValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModalValidatorTests.swift; sourceTree = "<group>"; };
 		2CBB87B62A2C6ED500334413 /* SignUpFormModalValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModalValidator.swift; sourceTree = "<group>"; };
+		2CBB87BF2A2CB5CD00334413 /* SignupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		2CBB87762A2C56BC00334413 /* UnitTesting */ = {
 			isa = PBXGroup;
 			children = (
+				2CBB87BE2A2CB59200334413 /* Constants */,
 				2CBB87B52A2C6EB700334413 /* Validator */,
 				2CBB87772A2C56BC00334413 /* AppDelegate.swift */,
 				2CBB87792A2C56BC00334413 /* SceneDelegate.swift */,
@@ -140,6 +143,14 @@
 				2CBB87B62A2C6ED500334413 /* SignUpFormModalValidator.swift */,
 			);
 			path = Validator;
+			sourceTree = "<group>";
+		};
+		2CBB87BE2A2CB59200334413 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2CBB87BF2A2CB5CD00334413 /* SignupConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +287,7 @@
 				2CBB877C2A2C56BC00334413 /* ViewController.swift in Sources */,
 				2CBB87B72A2C6ED500334413 /* SignUpFormModalValidator.swift in Sources */,
 				2CBB87782A2C56BC00334413 /* AppDelegate.swift in Sources */,
+				2CBB87C02A2CB5CD00334413 /* SignupConstants.swift in Sources */,
 				2CBB87822A2C56BC00334413 /* UnitTesting.xcdatamodeld in Sources */,
 				2CBB877A2A2C56BC00334413 /* SceneDelegate.swift in Sources */,
 			);
