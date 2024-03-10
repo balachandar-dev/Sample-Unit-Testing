@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SignUpFormModalValidator{
+class SignUpFormModalValidator : SignUpFormModelValidatorProtocol{
     
     func isFirstNameValid(firstName : String) -> Bool {
         var returnValue = true
