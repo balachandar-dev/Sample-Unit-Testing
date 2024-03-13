@@ -22,7 +22,13 @@ class MockURLProtocol : URLProtocol {
     override func startLoading() {
         
         if let signUpError = MockURLProtocol.error { //for error
-            self.client?.urlProtocol(self, didFailWithError: signUpError)
+            // TODO: Add custom error handling for the expected types
+            // TODO: Add custom error code in line 30
+            let errorInfo: [String : Any] = [
+                NSLocalizedDescriptionKey: signUpError.localizedDescription
+            ]
+            let error = NSError(domain: "com.hyperl.UnitTesting", code: 0, userInfo: errorInfo)
+            self.client?.urlProtocol(self, didFailWithError: error)
         }
         else { // for success
             self.client?.urlProtocol(self, didLoad: MockURLProtocol.stubResponseData ?? Data())
