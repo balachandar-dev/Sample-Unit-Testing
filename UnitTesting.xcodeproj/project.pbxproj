@@ -20,6 +20,8 @@
 		2C96C0362B9A0C21003DD2EA /* SignUpFormModelValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96C0352B9A0C21003DD2EA /* SignUpFormModelValidatorProtocol.swift */; };
 		2C96C04E2B9E140E003DD2EA /* MockSignupWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96C04D2B9E140E003DD2EA /* MockSignupWebservice.swift */; };
 		2C96C0562BA07B0A003DD2EA /* SignUpWebserviceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96C0552BA07B0A003DD2EA /* SignUpWebserviceProtocol.swift */; };
+		2C9955382BA353AD00D1F8EC /* MockSignupViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9955372BA353AD00D1F8EC /* MockSignupViewDelegate.swift */; };
+		2C9955402BA551F000D1F8EC /* SignUpViewDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99553F2BA551F000D1F8EC /* SignUpViewDelegateProtocol.swift */; };
 		2CBB87782A2C56BC00334413 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBB87772A2C56BC00334413 /* AppDelegate.swift */; };
 		2CBB877A2A2C56BC00334413 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBB87792A2C56BC00334413 /* SceneDelegate.swift */; };
 		2CBB877C2A2C56BC00334413 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBB877B2A2C56BC00334413 /* ViewController.swift */; };
@@ -64,6 +66,8 @@
 		2C96C0352B9A0C21003DD2EA /* SignUpFormModelValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormModelValidatorProtocol.swift; sourceTree = "<group>"; };
 		2C96C04D2B9E140E003DD2EA /* MockSignupWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupWebservice.swift; sourceTree = "<group>"; };
 		2C96C0552BA07B0A003DD2EA /* SignUpWebserviceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWebserviceProtocol.swift; sourceTree = "<group>"; };
+		2C9955372BA353AD00D1F8EC /* MockSignupViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupViewDelegate.swift; sourceTree = "<group>"; };
+		2C99553F2BA551F000D1F8EC /* SignUpViewDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewDelegateProtocol.swift; sourceTree = "<group>"; };
 		2CBB87742A2C56BC00334413 /* UnitTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBB87772A2C56BC00334413 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CBB87792A2C56BC00334413 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -216,6 +220,7 @@
 			children = (
 				2C96C0352B9A0C21003DD2EA /* SignUpFormModelValidatorProtocol.swift */,
 				2C96C0552BA07B0A003DD2EA /* SignUpWebserviceProtocol.swift */,
+				2C99553F2BA551F000D1F8EC /* SignUpViewDelegateProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 		2C96C03B2B9E0B30003DD2EA /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				2C9955362BA3538100D1F8EC /* View */,
 				2C96C04C2B9E13F6003DD2EA /* Webservice */,
 				2C96C02C2B977AA3003DD2EA /* Validator */,
 				2C96C03C2B9E0B66003DD2EA /* Protocol */,
@@ -244,6 +250,14 @@
 				2C96C04D2B9E140E003DD2EA /* MockSignupWebservice.swift */,
 			);
 			path = Webservice;
+			sourceTree = "<group>";
+		};
+		2C9955362BA3538100D1F8EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C9955372BA353AD00D1F8EC /* MockSignupViewDelegate.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		2CBB876B2A2C56BC00334413 = {
@@ -456,6 +470,7 @@
 				2C7853182B8CD97E00176E76 /* SignupwebService.swift in Sources */,
 				2CBB87B72A2C6ED500334413 /* SignUpFormModalValidator.swift in Sources */,
 				2C7853232B8CDA1E00176E76 /* SignupFormRequestModel.swift in Sources */,
+				2C9955402BA551F000D1F8EC /* SignUpViewDelegateProtocol.swift in Sources */,
 				2C7853282B8CDC0A00176E76 /* SignupFormResponseModel.swift in Sources */,
 				2CBB87782A2C56BC00334413 /* AppDelegate.swift in Sources */,
 				2CBB87C02A2CB5CD00334413 /* SignupConstants.swift in Sources */,
@@ -478,6 +493,7 @@
 				2C96C0172B977563003DD2EA /* SignUpPresenterTests.swift in Sources */,
 				2C96C02E2B977AB9003DD2EA /* MockSignupModelValidator.swift in Sources */,
 				2CBB87B12A2C6DA900334413 /* SignupFormModalValidatorTests.swift in Sources */,
+				2C9955382BA353AD00D1F8EC /* MockSignupViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
