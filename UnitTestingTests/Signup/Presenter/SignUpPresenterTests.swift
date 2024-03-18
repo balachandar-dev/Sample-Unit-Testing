@@ -63,6 +63,20 @@ class SignUpPresenterTests: XCTestCase {
         
         sut.processUserSignup(formModel: signUpFormModel)
         self.wait(for : [myExpectation], timeout : 5)
+        
+        XCTAssertEqual(mockSignupDelegate.successfullSignupCounter, 1, "This successful signup method was called one more time")
     }
 
+    func testSignupPresenter_WehnSignupOperationFails_CallErrorOnViewDelegate() {
+        let myExpectation = expectation(description: "Expectation errorHandler method to get called")
+        mockSignUpWebservice.shouldReturnError = true
+        mockSignupDelegate.expectation = myExpectation
+        
+        sut.processUserSignup(formModel: signUpFormModel)
+        self.wait(for: [myExpectation], timeout: 5)
+        
+        XCTAssertEqual(mockSignupDelegate.successfullSignupCounter, 0)
+        XCTAssertEqual(mockSignupDelegate.errorHandlerMethodCalled, 1)
+        XCTAssertNotNil(mockSignupDelegate.signupError)
+    }
 }

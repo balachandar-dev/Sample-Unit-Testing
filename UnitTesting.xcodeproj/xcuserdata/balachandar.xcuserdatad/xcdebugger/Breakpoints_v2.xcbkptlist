@@ -173,8 +173,8 @@
             filePath = "UnitTestingTests/Signup/Mocks/View/MockSignupViewDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "successfullSignup()"
             landmarkType = "7">
          </BreakpointContent>
@@ -237,8 +237,8 @@
             filePath = "UnitTestingTests/Signup/Mocks/Webservice/MockSignupWebservice.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "signUp(withForm:completionHandler:)"
             landmarkType = "7">
          </BreakpointContent>
